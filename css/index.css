@@ -1,0 +1,544 @@
+body,
+dl,
+dd{
+	margin: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+p{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+h2,
+h3{
+	margin: 0;
+}
+.clearFix:after{
+	content: "";
+    clear: both;
+    display: block;
+}
+.sec1{
+	position: relative;
+}
+#first{
+	width: 450px;
+    height: 146px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -225px;
+}
+.firImg{
+	float: left;
+	width: 102px;
+	height: 136px;
+	border: 1px solid #fff;
+	padding: 4px;
+	margin-right: 40px;
+}
+.firImg img{
+	width: 102px;
+	height: 136px;
+}
+#first>span{
+    font: 40px/45px arial;
+    letter-spacing: 10px;
+    color: #fff;
+}
+#from{
+	float: left;
+	width: 168px;
+	height: 32px;
+	border: 2px solid #1da8e5;
+	background: #7196c3;
+	margin-top: 14px;
+}
+#from span:nth-of-type(1){
+	font: 20px/32px arial;
+	color: #fff;
+	margin-left: 15px;
+}
+#from span:nth-of-type(2){
+	font: bold 20px/32px '"微软雅黑"';
+	color: #ff0;
+}
+.sec2{
+	padding-left: 320px;
+}
+#secondL{
+	float: left;
+	width: 276px;
+	height: 100%;
+	padding-top: 98px;
+}
+#secondL>p{
+	font: bold 20px/66px arial;
+	color: #1d2d5e;
+}
+#secondL img{
+	width: 276px;
+	height: 339px;
+}
+#secondL .secoLb{
+	height: 135px;
+	background: #202c5c;
+}
+#secondL .secoLb p{
+	font: bold 16px/48px "微软雅黑";
+	color: #fff;
+	letter-spacing: 5px;
+	text-align: center;
+}
+#secondL .secoLb span{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #a0fffb;
+	border-radius: 50%;
+	font: 12px/40px arial;
+	color: #a0fffb;
+	text-align: center;
+	margin-right: 20px;
+}
+#secondL .secoLb span:nth-of-type(1){
+	margin-left: 20px;
+}
+#secondM{
+	float: left;
+	width: 330px;
+	height: 100%;
+	background: #f6ad3a;
+}
+#secondM .secoMt{
+	position: relative;
+}
+#secondM .secoMt span:nth-of-type(1){
+	display: block;
+	font: bold 80px/110px arial;
+	color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+#secondM .secoMt span:nth-of-type(2){
+	position: absolute;
+    top: 52px;
+    left: 39%;
+    font: 12px/20px '微软雅黑';
+    background: #f6ad3a;
+    color: #fff;
+    letter-spacing: 4px;
+}
+#secondM .secoMul{
+	font: bold 14px/34px "微软雅黑";
+	color: #fff;
+	padding-left: 40px;
+}
+#secondM .secoMul li:nth-last-of-type(1),
+#secondM .secoMul li:nth-last-of-type(2)
+{
+	color: #40210f;
+}
+#secondM .secoMb{
+	color: #fff;
+	padding-left: 40px;
+}
+#secondM .secoMb p{
+	font: bold 16px/48px "微软雅黑";
+	letter-spacing: 5px;
+}
+#secondM .secoMb span{
+	float: left;
+    width: 42px;
+    padding-top: 33px;
+    margin-right: 20px;
+    text-align: center;
+    background: url(../img/insterestIcon.png) no-repeat;
+	background-size: 75px 80px;
+}
+#secondM .secoMb span:nth-of-type(1){
+	background-position:  0 0;
+}
+#secondM .secoMb span:nth-of-type(2){
+	background-position:  0 -50px;
+}
+#secondM .secoMb span:nth-of-type(3){
+	background-position:  -40px 0;
+}
+#secondM .secoMb span:nth-of-type(4){
+	background-position:  -45px -50px;
+}
+#secondR{
+	float: left;
+	width: 440px;
+	height: 100%;
+	background: #efefef;
+}
+#secondR .secoRt{
+	position: relative;
+}
+#secondR .secoRt span:nth-of-type(1){
+	display: block;
+	font: bold 80px/110px arial;
+	color: #202c5c;
+    text-align: center;
+    margin-top: 50px;
+}
+#secondR .secoRt span:nth-of-type(2){
+	position: absolute;
+    top: 45px;
+    left: 38%;
+    font: bold 16px/24px '微软雅黑';
+    background: #efefef;
+    color: #202c5c;
+    letter-spacing: 2px;
+}
+#secondR .secoRt span:nth-of-type(3){
+    width: 100px;
+    position: absolute;
+    top: 45px;
+    left: 58%;
+    font: bold 12px/14px arial;
+}
+#secondR .secoRm,
+#secondR .secoRb{
+	padding-left: 34px;
+	font: bold 14px/28px "微软雅黑";
+	color: #383735;
+}
+#secondR .secoRm{
+	margin-bottom: 30px;
+}
+#secondR h3{
+	font: bold 22px/50px arial;
+	color: #202c5e;
+}
+#secondR .secoRm time,
+#secondR .secoRb time{
+	color: #ffa611;
+}
+#secondR .secoRm div:nth-of-type(1){
+	margin-bottom: 20px;
+}
+.sec3{
+	position: relative;
+}
+.sec3 img{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -95px;
+	width: 640px;
+	height: 190px;
+}
+.sec3 .sec3R{
+	position: absolute;
+    top: 36%;
+    left: 50%;
+}
+.sec3 .sec3R p{
+    width: 305px;
+    font: 38px/60px arial;
+    color: #5186ba;	
+}
+.sec3 .sec3R span{
+	display: block;
+    width: 200px;
+    border: 2px solid #f5ae3a;
+    font: 24px/40px '微软雅黑';
+    color: #f5ae3a;
+    text-align: center;
+    letter-spacing: 10px;	
+}
+.sec4{
+	position: relative;
+}
+.sec4 dl{
+    width: 196px;
+    height: 90%;
+    background: #efefef;
+    font: 14px/36px "微软雅黑";
+    color: #383735;
+    padding: 4.5% 40px 0;
+}
+.sec4 dl dd:nth-of-type(1){
+    text-indent: 2rem;
+}
+.sec4 dl dd:nth-last-of-type(1){
+	width: 122px;
+    border: 1px solid #88a0c6;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.sec4 dl a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    font: 20px/30px arial;
+    color: #fff;
+    background: #88a0c6;
+    text-align: center;
+    margin: 1px 1px;
+    border-radius: 10px;
+}
+.sec4 .sec4Tri{
+	position: absolute;
+    top: 38px;
+    left: 276px;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid #88a0c6;
+    border-left: 400px solid #88a0c6;
+    border-right: 600px solid transparent;
+}
+.sec4 img{
+	position: absolute;
+	top: 25%;
+    left: 35%;
+	width: 602px;
+	height: 376px;
+}
+.sec5{
+	position: relative;
+}
+.sec5 dl{
+	float: right;
+    width: 196px;
+    height: 90%;
+    background: #dddcda;
+    font: 14px/36px "微软雅黑";
+    color: #383735;
+    padding: 4.5% 40px 0;
+}
+.sec5 dl dd:nth-of-type(1){
+    text-indent: 2rem;
+}
+.sec5 dl dd:nth-last-of-type(1){
+	width: 122px;
+    border: 1px solid #f6ad3a;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.sec5 dl a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    font: 20px/30px arial;
+    color: #fff;
+    background: #f6ad3a;
+    text-align: center;
+    margin: 1px 1px;
+    border-radius: 10px;
+}
+.sec5 .sec5Tri{
+    position: absolute;
+    top: 38px;
+    left: 90px;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid #f6ad3a;
+    border-right: 400px solid #f6ad3a;
+    border-left: 600px solid transparent;
+}
+.sec5 img{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    width: 602px;
+    height: 376px;
+}
+.sec6{
+	position: relative;
+}
+.sec6 dl{
+    width: 196px;
+    height: 90%;
+    background: #fff;
+    font: 14px/36px "微软雅黑";
+    color: #383735;
+    padding: 4.5% 40px 0;
+}
+.sec6 dl dd:nth-of-type(1){
+    text-indent: 2rem;
+}
+.sec6 dl dd:nth-last-of-type(1){
+	width: 122px;
+    border: 1px solid #113372;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.sec6 dl a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    font: 20px/30px arial;
+    color: #fff;
+    background: #113372;
+    text-align: center;
+    margin: 1px 1px;
+    border-radius: 10px;
+}
+.sec6 .sec6Tri{
+    position: absolute;
+    top: 37px;
+    left: 277px;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid #113372;
+    border-left: 400px solid #113372;
+    border-right: 600px solid transparent;
+}
+.sec6 img{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 602px;
+    height: 376px;
+}
+.sec7 h2{
+	text-align: center;
+    color: #5186ba;
+    font: bold 28px/100px "微软雅黑";
+}
+.sec7{
+	position: relative;
+}
+.sec7 dl{
+	font: bold 14px/30px "微软雅黑";
+	background: #000;
+    height: 100%;
+    color: #fff;
+    padding: 0 20px;
+    opacity: 0;
+}
+.sec7 dl:hover{
+	opacity: .7;
+}
+.sec7 dl dt{
+	font: bold 18px/60px "微软雅黑";
+}
+.sec7 .pro5Con{
+	position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.sec7 .pro5Con img{
+	width: 230px;
+}
+.sec7 .pro5Con dl{
+	position: absolute;
+	bottom: 0;
+    width: 190px;
+}
+.sec7 .pro4Con{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    margin-left: -125px;
+}
+.sec7 .pro4Con img{
+	width: 250px;
+}
+.sec7 .pro4Con dl{
+    position: absolute;
+    font: bold 14px/36px "微软雅黑";
+    width: 210px;
+    bottom: 0;
+}
+.sec7 .pro6Con{
+    position: absolute;
+    top: 20%;
+    left: 63%;
+}
+.sec7 .pro6Con img{
+	width: 230px;
+}
+.sec7 .pro6Con dl{
+	position: absolute;
+    width: 190px;
+    bottom: 0;
+}
+.sec7 .sec7Tri1{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid #113372;
+    border-left: 100px solid #113372;
+    border-right: 100px solid transparent;
+}
+.sec7 .sec7Tri2{
+	position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -140px;
+    border-bottom: 70px solid transparent;
+    border-top: 70px solid #f6ad3a;
+    border-right: 70px solid #f6ad3a;
+    border-left: 70px solid transparent;
+}
+.sec8{
+	position: relative;
+}
+.sec8 .sec8T{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+.sec8 .sec8T strong{
+	float: left;
+    font: bold 100px/1 "微软雅黑";
+    color: #fff;
+}
+.sec8 .sec8T p{
+	float: left;
+    font: 20px/30px arial,"微软雅黑";
+    padding-top: 35px;
+}
+.sec8 .sec8T span:nth-of-type(1){
+	color: #fff;
+}
+.sec8 .sec8T span:nth-of-type(2){
+	color: #f7ed11;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.sec8 .sec8M{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+.sec8 .sec8M span{
+    float: left;
+    color: #fff;
+    font: 20px/30px arial;
+    padding: 0 30px;
+    text-indent: 50px;
+    background: url(../img/lastIcon.png) no-repeat;
+    background-size: 29px 125px;
+    margin-right: 50px;
+}
+.sec8 .sec8M span:nth-of-type(2){
+	background-position: 0 -32px;
+}
+.sec8 .sec8M span:nth-of-type(3){
+	background-position: 0 -64px;
+}
+.sec8 .sec8M span:nth-of-type(4){
+	background-position: 0 -96px;
+}
+.sec8 .bottomBar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #efefef;	
+}
+

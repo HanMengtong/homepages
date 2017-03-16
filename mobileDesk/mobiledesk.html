@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable = no"/>
+<title></title>
+
+<script>
+fn();
+window.addEventListener("resize",fn);
+function fn() {
+	var html = document.querySelector("html");
+	var width = html.getBoundingClientRect().width;
+	html.style.fontSize = width/15 + "px"; 
+}
+</script>
+
+</head>
+<link rel="stylesheet" href="css/indexxx.css" />
+<link href="css/hj_index.css" rel="stylesheet"/>
+<link href="css/hj_content.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/less.css"/>
+<link rel="stylesheet" type="text/css" href="css/less1.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<body>
+	<section id="gallery" style="display: none;">
+		<div id="list" style="display: block;">
+			<header class="header">
+				<a href="#home" class="return"><</a>
+				<a href="#" class="delete"></a>
+			</header>
+			<header class="sureHeader">
+				<a href="javascript:;" class="cancel">取消</a>
+				<a href="javascript:;" class="ensure">确定</a>
+			</header>			
+			<!--             //展示图片的div                -->
+			<ul id="wrap">
+				
+			</ul>							   
+		</div>
+		<div id="show" style="display: none;">
+			<!--<div class="inner">
+				<img src ="img/1.jpg"/>
+				<img src ="img/2.jpg"/>
+			</div>
+			<a href="javascript:;"><</a>-->
+		</div>
+	</section>
+	<audio src="music/1.mp3" id="music"></audio>
+		<section id="musicplay" style="display: none;">
+			<div id="xwrap">
+			<img src="imgs/1.jpg" class="bg"/>
+			<div id="top">
+				<span></span>
+				<div id="progress">
+					<div id="drag"></div>
+				</div>
+			</div>			
+			<div id="cover"><img src="imgs/1.jpg"/></div>
+			<div id="bottom">
+				<p>00:00</p>
+				<div id="progress1">					
+					<div id="drag1"></div>					
+				</div>
+				<p>04:10</p>
+			</div>
+			<div id="title">
+				<p class="name">Just A Kiss</p>
+				<p class="player">Lady Antebellum</p>
+			</div>
+			<div id="bar">
+				<a href="javascript:;" class="next"></a>
+				<a href="javascript:;" class="prev"></a>
+				<a href="javascript:;" id="play" class="bo"></a>
+			</div>
+			<div id="xlist">
+				<div id="div2">
+					<ul>
+						<li class="active">Just A Kiss</li>
+						<li>Uptown Funk</li>
+						<li>Animals</li>
+						<li>Feelings</li>
+						<li>Maps</li>
+						<li>Now You See Me</li>
+						<li>爱情废柴</li>
+						<li>半兽人</li>
+						<li>不该</li>
+						<li>床边故事</li>
+						<li>告白气球</li>
+						<li>回到过去</li>
+					</ul>
+				</div>				
+			</div>
+			<a href="javascript:;" class="back"></a>
+		</div>
+		<div id="div1">
+		<div id="wrapBox">
+			<img src="imgs/1.jpg"/>
+			<img src="imgs/2.jpg"/>
+			<img src="imgs/3.jpg"/>
+			<img src="imgs/4.jpg"/>
+			<img src="imgs/5.jpg"/>
+			<img src="imgs/6.jpg"/>
+			<img src="imgs/7.jpg"/>
+			<img src="imgs/8.jpg"/>
+			<img src="imgs/9.jpg"/>
+			<img src="imgs/10.jpg"/>
+			<img src="imgs/11.jpg"/>
+			<img src="imgs/12.jpg"/>
+		</div>
+		<a href="javascript:;" class="off" id="goback"></a>
+		<a href="#home" id="home"><</a>
+	</div>	
+			
+		</section>
+<section id="main">
+<div id="d_wrap">
+	<ul class="d_ul"  id="gdiv">
+		<li class="d_li">
+			<div class="d_time"></div>
+			<div class="d_date"></div>
+			<nav class="d_nav clear">
+				<span class="d_active"></span>
+				<span></span>
+				<span></span>
+			</nav>
+			<ul class="d_pic1 clear">
+				<a href="#message"/><li><img src="img/tubiao/2221.png"/><p>信息</p></li></a>
+				<a href="#music"/><li><img src="img/tubiao/music.png"/><p>音乐</p></li></a>
+				<a href="#tel"/><li><img src="img/tubiao/dianhua.png"/><p>电话</p></li></a>
+				<a href="#pic"/><li><img src="img/tubiao/photo.png"/><p>图库</p></li></a>
+			</ul>
+		</li>
+		<li class="d_li" >
+			<ul class="d_pic2 clear">
+				<li><img src="img/tubiao/33332.png"/><p>手电筒</p></li>
+				<li><img src="img/tubiao/4444.png"/><p>浏览器</p></li>
+				<li><img src="img/tubiao/5554.png"/><p>天气</p></li>
+				<li><img src="img/tubiao/7.png"/><p>日历</p></li>
+				<li><img src="img/tubiao/6665.png"/><p>计算器</p></li>
+				<li><img src="img/tubiao/7776.png"/><p>应用</p></li>
+				<li><img src="img/tubiao/shezhi.png"/><p>设置</p></li>
+				<li><img src="img/tubiao/888.png"/><p>更新</p></li>
+				<li><img src="img/tubiao/994.png"/><p>文件</p></li>
+				<li><img src="img/tubiao/005.png"/><p>地图</p></li>
+				<li><img src="img/tubiao/116.png"/><p>联系人</p></li>
+				<li><img src="img/tubiao/vidio.png"/><p>视频</p></li>	
+			</ul>
+			<nav class="d_nav clear">
+				<span></span>
+				<span class="d_active"></span>
+				<span></span>
+			</nav>
+			<ul class="d_pic1 clear">
+				<a href="#message"/><li><img src="img/tubiao/2221.png"/><p>信息</p></li></a>
+				<a href="#music"/><li><img src="img/tubiao/music.png"/><p>音乐</p></li></a>
+				<a href="#tel"/><li><img src="img/tubiao/dianhua.png"/><p>电话</p></li></a>
+				<a href="#pic"/><li><img src="img/tubiao/photo.png"/><p>图库</p></li></a>
+			</ul>
+		</li>
+		<li class="d_li">
+			
+			<div id="g_box">
+			<h4></h4>
+			<div class="g_sel">
+				<select></select>年
+				<select></select>月
+			</div>
+			<div id="g_date">
+			<ul>
+				<li>日</li>
+				<li>一</li>
+				<li>二</li>
+				<li>三</li>
+				<li>四</li>
+				<li>五</li>
+				<li>六</li>
+			</ul>
+			<div></div>
+		</div>
+		</div>
+			
+			<nav class="d_nav">
+				<span></span>
+				<span></span>
+				<span class="d_active"></span>
+			</nav>
+			<ul class="d_pic1 clear">
+				<a href="#message"/><li><img src="img/tubiao/2221.png"/><p>信息</p></li></a>
+				<a href="#music"/><li><img src="img/tubiao/music.png"/><p>音乐</p></li></a>
+				<a href="#tel"/><li><img src="img/tubiao/dianhua.png"/><p>电话</p></li></a>
+				<a href="#pic"/><li><img src="img/tubiao/photo.png"/><p>图库</p></li></a>
+			</ul>
+		</li>
+		
+	</ul>
+</div>
+<div id="gwrap">
+			<div class="d_time"></div>
+			<div class="d_date"></div>
+			<div id="gjiesuo">
+				<div id="ghua">滑动解锁</div>
+				<div id="gsmall">
+					<img src="img/suo.png" />
+				</div>
+			</div>
+		</div>
+</section>	
+<div id="hj_wrap" class="clearFix" style="display: none;">
+	<div id="hj_left">
+		<header id="hj_header">
+			<a class="back" href="#home">BACK</a>
+			<!-- <div class="clearFix">
+				<a href="javascript:;">通话</a>
+				<a class="active" href="javascript:;">联系人</a>
+				<a href="javascript:;">黄页</a>
+			</div> -->
+		</header>
+		<section id="hj_section">
+			<input type="text" name="text" class="btn" placeholder="" />
+			<div class="card">
+				<img src="hj_img/pro.png"/>
+				<p>我的名片</p>
+			</div>
+			<ul class="selects">
+				<li><span>我的群组</span><a href="#">></a></li>
+				<li><span>免费电话</span><a href="#">></a></li>
+			</ul>
+			<div class="name">
+				<ul class="fNameN">
+					<li>Z</li>
+					<li><a href="javascript:;">赵</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>Q</li>
+					<li><a href="javascript:;">钱</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>S</li>
+					<li><a href="javascript:;">孙</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>L</li>
+					<li><a href="javascript:;">李</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>Z</li>
+					<li><a href="javascript:;">周</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>W</li>
+					<li><a href="javascript:;">吴</a></li>
+				</ul>
+				 <ul class="fNameN">
+					<li>Z</li>
+					<li><a href="javascript:;">郑</a></li>
+				</ul>
+				<ul class="fNameN">
+					<li>W</li>
+					<li><a href="javascript:;">王</a></li>
+				</ul> 
+			</div>
+		</section>
+		<div id="hj_addBtn">+</div>
+	</div>
+	<div id="hj_right">
+		<div class="dlWrap">
+			<dl>
+				<dt><a class="close" href="javascript:;">x</a></dt>
+				<dd>发送到桌面</dd>
+				<dd>当前未使用语音信箱</dd>
+				<dd>删除联系人</dd>
+				<dd>加入黑名单</dd>
+			</dl>
+		</div>
+		<section>
+			<img src=""/>
+			<a href="javascript:;" class="back"><</a>
+			<a href="javascript:;" class="options">.<br/>.<br/>.</a>
+			<p>某某某</p>
+		</section>
+		<ul class="clearFix">
+			<li class="first clearFix">
+				<div class="inner">
+					<a class="store" href="javascript:;">
+						<img src="hj_img/store.png"/>
+						<span>收藏</span>
+					</a>
+					<a class="records" href="javascript:;">
+						<img src="hj_img/records.png"/>
+						<span>通话记录</span>
+						<i></i>
+					</a>
+					<a class="share" href="javascript:;">
+						<img src="hj_img/share.png"/>
+						<span>分享</span>
+						<i></i>
+					</a>
+				</div>
+			</li>
+			<li class="phone">
+				<span>
+					112 3145 4956
+				</span>
+				<div>
+					<span>手机</span>
+					<i></i>
+					<span>北京</span>
+				</div>
+				<a href="#"><img src="hj_img/message.png"/></a>
+			</li>
+		</ul>
+	</div>
+	<div id="hj_add">
+		<header class="clearFix">
+			<a class="hj_cancel" href="javascript:;">取消</a>
+			<span>新建联系人</span>
+			<a class="hj_comfirm" href="javascript:;">确定</a>
+		</header>
+		<section>
+			<dl>
+				<dt><img src="hj_img/pro.png"/></dt>
+				<dd><input type="text" placeholder="姓名"/></dd>
+				<dd><input type="text" placeholder="公司"/></dd>
+				<dd><input type="text" placeholder="职位"/></dd>
+			</dl>
+			<div class="mobile"><span>手机</span><input type="text" placeholder="电话" /></div>
+			<div class="work"><span>工作</span><input type="text" placeholder="邮件" /></div>
+		</section>
+	</div>
+</div>
+	<section id="duanxin" style="display: none;">
+		<section id="sec_One" >
+			<header id="header" class="clearFix">
+				<div id="left">
+					<a href="javascript:;">编辑</a>
+					<a href="javascript:;">取消</a>
+				</div>
+				<span id="Xx" ><a href="#home">信息</a></span>
+				<div id="right">
+					<a href="index1.html" class="add"></a>
+					<span class="del">删除</span>
+				</div>
+			</header>
+			<div id='big'>
+					<div id = "Ss">
+					<img src="img/2.png"/>
+					<input type="text" placeholder="搜索">
+				</div>
+				<div>
+					<ul id="Dxs">
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section id="sec_Two" >
+			<header id="header" class="clearFix">
+			<a href="javascript:;"></a>
+			<a href="javascript:;">
+				<span></span>
+			</a>
+			<a href="javascript:;"></a>
+			</header>
+			<div id='big'>
+			<section id ="Dhk"></section>
+			</div>
+			<section class="srk">
+				<div class="Bright">
+					<textarea></textarea>
+					<span class="fs"></span>
+				</div>
+			</section>
+		</section>
+	</section>
+<!--<script type="text/javascript" src="js/changjians.js"></script>
+<script src="js/delete.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/indexhome.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/hash.js"></script>
+<script type="text/javascript" src="js/hj_data.js"></script>
+<script type="text/javascript" src="js/miaov.js"></script>
+<script type="text/javascript" src="js/hj_index.js"></script>
+<script src="js/massage.js"></script>
+</body>
+</html>

@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable = no"/>
+<title>腾讯娱乐互动移动端</title>
+<script>
+fn();
+window.addEventListener("resize",fn);
+function fn() {
+	var html = document.querySelector("html");
+	var width = html.getBoundingClientRect().width;
+	html.style.fontSize = width/15 + "px"; 
+}
+</script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+<style>
+*{
+	margin: 0;
+	padding: 0;/**/
+	font-family: helvetica;
+}
+p{
+	font-size: .6rem;
+	line-height: 1rem;
+    text-align: left;
+}
+.svgs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.svgs svg{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.section { 
+	text-align: center; 
+	font: 50px "Microsoft Yahei"; 
+	color: #fff;
+	position: relative;
+}
+.sec0{
+	background: url(img/bg_01.jpg) no-repeat center 0;
+	background-size: 100% 80%;
+}
+@keyframes icoS0Move{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.sec0 span{
+	position: absolute;
+	background: url(img/icon01.png) no-repeat;
+    background-size: 14rem;
+    transition: 1s;
+}
+.sec0.active span{
+	animation: icoS0Move .5s ease-out;
+}
+.sec0 .ico1Sec0{
+    left: 60%;
+    top: 17%;
+    width: 2rem;
+    height: 2rem;
+    background-position: -11rem 0;
+}
+.sec0 .ico2Sec0{
+    left: 0;
+    top: 10%;
+    width: 3.5rem;
+    height: 2.5rem;
+    background-position: -.1rem -.3rem;
+}
+.sec0 .ico3Sec0{
+    right: 5%;
+    top: 23%;
+    width: 3rem;
+    height: 2.5rem;
+    background-position: -4.3rem -.2rem;
+}
+.sec0 .ico4Sec0{
+	left: 6%;
+    top: 47%;
+    width: 3.5rem;
+    height: 2rem;
+    background-position: -7.5rem -.5rem;
+}
+.sec0 .ico5Sec0{
+    left: 10%;
+    top: 16%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-position: -.1rem -3rem;
+}
+.sec0 .ico6Sec0{
+    right: -4%;
+    top: 42%;
+    width: 3.5rem;
+    height: 4.5rem;
+    background-position: -3.8rem -3rem;
+}
+.sec0 .ico7Sec0{
+    left: 5%;
+    top: 70%;
+    width: 3rem;
+    height: 4rem;
+    background-position: -8rem -3rem;
+}
+.section h2{
+	font-size: 1.5rem;
+}
+.section .p{
+	z-index: 3;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 18%;
+    text-align: left;
+}
+.section .p p{
+	font-size: 0.5rem;
+}
+.sec2 .p{
+    margin-left: -90px;
+    text-align: right;
+}
+.sec3 .p{
+    margin-left: -100px;
+}
+.sec4 .p{
+    margin-left: -60px;
+    text-align: right;
+}
+.section .data {
+    z-index: 3;
+    font-size: 0.5rem;
+    position: absolute;
+    left: 50%;
+    text-decoration: underline;
+}
+.sec1 .data{
+	color: #78A89B;
+    margin-left: -115px;
+    top: 9%;
+}
+.sec2 .data{
+	color: #FBCEAD;
+	margin-left: -130px;
+    top: 84%;
+}
+.sec3 .data{
+	color: #BAD4FF;
+    margin-left: 30px;
+    top: 78%;
+}
+.sec4 .data{
+	color: #A5E0BC;
+    margin-left: -125px;
+    top: 84%;
+}
+.section .box{
+	position: absolute;
+	transition: 3s;
+	z-index: 4;
+}
+.section .box_cir{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.section .box_pic{
+	position: absolute;
+	top: 18px;
+    left: 25px;
+    width: 3.2rem;
+    height: 3.5rem;
+	background: url(img/icon02.png) no-repeat;
+	background-size: 20rem;
+}
+.section .comic_role{
+	position: absolute;
+	z-index: 3;
+	background: url(img/icon03.png) no-repeat;
+    background-size: 7rem;
+}
+.sec1 .box{
+	top: 50%;
+	left: 50%;
+	margin-left: -2.5rem;
+}
+.sec1 .box_cir{
+	border: .7rem solid #31c09c;
+}
+@keyframes show1{
+	0%{
+		opacity: 0;
+		transform: scale(.5);
+	}
+	80%{
+		opacity: .5;
+		transform: scale(1.3);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.sec1.active .box_cir{	
+	animation: .5s show1 ease-out;
+}
+.sec1.active .box_pic{
+	animation: .8s show1 ease-out;
+}
+.sec2 .box{
+    width: 5rem;
+    height: 5rem;
+	top: 40%;
+	left: 37%;
+	margin-left: -0.5rem;
+}
+.sec2 .box_cir1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 5rem solid #ffCA13;
+	border-left: 3rem solid transparent;
+	border-right: 3rem solid transparent;
+	transform: rotateZ(-30deg);
+}
+.sec2 .box_cir2{
+	position: absolute;
+	top: 11px;
+    left: 25px;
+	border-bottom: 4rem solid #fff;
+	border-left: 2rem solid transparent;
+	border-right: 2rem solid transparent;
+	transform: rotateZ(-30deg);
+}
+.sec2 .box_pic{
+	top: 28px;
+    left: 35px;
+	background-position: -3rem -.1rem;
+}
+@keyframes show2{
+	0%{
+		opacity: 0;
+		transform: translateY(-60px) rotateZ(-30deg);
+	}
+	80%{
+		opacity: .5;
+		transform: translateY(-10px) rotateZ(-30deg);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) rotateZ(-30deg);
+	}
+}
+@keyframes showPic2{
+	0%{
+		opacity: 0;
+		transform: translateY(100px) translateX(-50px);
+	}
+	80%{
+		opacity: .5;
+		transform: translateY(30px) translateX(-20px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) translateX(0px);
+	}
+}
+.sec2.active .box_cir1{
+	animation: .8s show2 linear;
+}
+.sec2.active .box_cir2{
+	animation: 1s show2 linear;
+}
+.sec2.active .box_pic{
+	animation: .8s showPic2 linear;
+}
+@keyframes showComic2{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.sec2 .comic_role{
+	top: 35%;
+    left: 47%;
+	width: 169px;
+    height: 185px;
+}
+.sec2.active .comic_role{
+	animation: .8s showComic2 linear;
+}
+.sec3 .box{
+	top: 43%;
+	left: 20%;
+}
+.sec3 .box_cir{
+	width: 3rem;
+    height: 3rem;
+	border: .7rem solid #5FC5FF;
+	border-radius: initial;
+	transform: rotateZ(-30deg);
+}
+.sec3 .box_pic{
+	top: 10px;
+	left: 8px;
+    background-position: -6.5rem -.2rem;
+}
+@keyframes showPic3{
+	0%{
+		opacity: 0;
+		transform: rotateZ(-90deg);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateZ(0deg);
+	}
+}
+.sec3.active .box_pic{
+	transform-origin: 0,0;
+	animation: 1s showPic3 linear;
+}
+@keyframes showComic3{
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.sec3 .comic_role{
+	top: 37%;
+    left: 56%;
+	width: 102px;
+    height: 110px;
+    background-position: -1rem -8.5rem;
+}
+.sec3.active .comic_role{
+	animation: .8s showComic3 linear;
+}
+.sec4 .box{
+	top: 35%;
+	left: 20%;
+}
+.sec4 .box_cir1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 5rem solid #00ffa8;
+	border-left: 3rem solid transparent;
+	border-right: 3rem solid transparent;
+	transform: rotateZ(45deg);
+}
+.sec4 .box_cir2{
+	position: absolute;
+	top: 12px;
+    left: 25px;
+	border-bottom: 4rem solid #fff;
+	border-left: 2rem solid transparent;
+	border-right: 2rem solid transparent;
+	transform: rotateZ(45deg);
+}
+.sec4 .box_pic{
+	top: 45px;
+    left: 25px;
+	background-position: -10rem -.3rem;
+}
+@keyframes show4{
+	0%{
+		opacity: 0;
+		transform: translateY(-60px) rotateZ(45deg);
+	}
+	80%{
+		opacity: .5;
+		transform: translateY(-10px) rotateZ(45deg);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) rotateZ(45deg);
+	}
+}
+@keyframes showPic4{
+	0%{
+		opacity: 0;
+		transform: rotateZ(0deg) scale(0);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateZ(1080deg) scale(1);
+	}
+}
+.sec4.active .box_cir1{
+	animation: .8s show4 linear;
+}
+.sec4.active .box_cir2{
+	animation: 1s show4 linear;
+}
+.sec4.active .box_pic{
+	transform-origin: 40% 30%; 
+	animation: .8s showPic4 linear;
+}
+@keyframes showComic4{
+	0%{
+		opacity: 0;
+		transform: translateY(0px) translateX(0px);
+	}
+	50%{
+		opacity: 1;
+		transform: translateY(-120px) translateX(-120px) rotateZ(-90deg);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) translateX(0px);
+	}
+}
+.sec4 .comic_role{
+	left: 50%;
+    margin-left: 26px;
+    bottom: 10%;
+    display: block;
+    width: 115px;
+    height: 92px;
+    background-position: -19.5px -331.5px;
+}
+.sec4.active .comic_role{
+	transform-origin: center;
+	animation: 1s showComic4 linear;
+}
+.letterFix .letter{
+	position: absolute;
+	transition: .5s;
+}
+.sec1 .letter{
+	color: #3F826F;
+}
+.sec2 .letter{
+	color: #EC8630;
+}
+.sec3 .letter{
+	color: #4C91FF;
+}
+.sec4 .letter{
+	color: #04B65A;
+}
+.sec5 .imgBorder{
+	position: absolute;
+    top: 8%;
+    left: 0;
+    width: 14rem;
+    height: 16rem;
+    background: #2E3A5E;
+    z-index: 3;
+}
+.sec5 .imgBorder img{
+	width: 14rem;
+    height: 16rem;
+}
+.sec5 .pFix{
+	position: absolute;
+	top: 29%;
+    left: 33%;
+    z-index: 3;
+}
+@keyframes moveFix{
+	0%{
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	80%{
+		opacity: .5;
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+.sec5 .moveEl{
+	transition: .5s;
+}
+.sec5 .box1{
+	top: 21%;
+    left: 71%;
+}
+.sec5 .box_pic{
+    background-size: 16rem;
+}
+.sec5.active .box1{
+    animation: moveFix 1s linear;
+}
+.sec5 .box1 .box_cir{
+	width: 2.5rem;
+    height: 2.5rem;
+	border: .5rem solid #31c09c;
+}
+.sec5 .box1 .box_pic{
+	width: 2.5rem;
+    height: 2.5rem;
+    top: 10px;
+    left: 14px;
+}
+.sec5 .box2{
+	top: 6%;
+    left: 35%;
+}
+.sec5.active .box2{
+    animation: moveFix 1s linear;
+}
+.sec5 .box2 .box_cir1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 3rem solid #ffCA13;
+	border-left: 2rem solid transparent;
+	border-right: 2rem solid transparent;
+	transform: rotateZ(-20deg);
+}
+.sec5 .box2 .box_cir2{
+	position: absolute;
+	top: 11px;
+    left: 13px;
+	border-bottom: 2rem solid #fff;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	transform: rotateZ(-20deg);
+}
+.sec5 .box2 .box_pic{
+	width: 2.5rem;
+    height: 2.5rem;
+    top: 13px;
+    left: 28px;
+    background-position: -2.5rem 0;
+}
+.sec5 .box3{
+	top: 60%;
+    left: 36%;
+}
+.sec5.active .box3{
+    animation: moveFix 1s linear;
+}
+.sec5 .box3 .box_cir{
+	width: 2.5rem;
+    height: 2.5rem;
+    border: .4rem solid #5FC5FF;
+    border-radius: initial;
+    transform: rotateZ(-30deg);
+}
+.sec5 .box3 .box_pic{
+	width: 2.5rem;
+    height: 2.5rem;
+	top: .4rem;
+    left: .2rem;
+    background-position: -5.3rem -.1rem;
+}
+.sec5 .box4{
+	top: 32%;
+	left: 0;
+}
+.sec5.active .box4{
+    animation: moveFix 1s linear;
+}
+.sec5 .box4 .box_cir1{
+	position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 3rem solid #00ffa8;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    transform: rotateZ(-10deg);
+}
+.sec5 .box4 .box_cir2{
+	position: absolute;
+    top: 11px;
+    left: 13px;
+    border-bottom: 2rem solid #fff;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    transform: rotateZ(-10deg);
+}
+.sec5 .box4 .box_pic{
+	width: 2.5rem;
+    height: 2.5rem;
+    top: .8rem;
+    left: .7rem;
+    background-position: -7.8rem 0;
+}
+.sec5 .box5{
+	top: 45%;
+    left: 75%;
+}
+.sec5.active .box5{
+    animation: moveFix 1s linear;
+}
+.sec5 .box5 em{
+	width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: block;
+    background: #3E528F;
+}
+.sec5 .box5 span{
+	position: absolute;
+    top: 37%;
+    left: 10%;
+    font-size: .7rem;
+    color: #6A8CDE;
+}
+@keyframes pMove{
+	0%{
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.sec6 .p1{
+	position: absolute;
+    top: 17%;
+    left: 10%;
+}
+.sec6 .p2{
+	position: absolute;
+    top: 77%;
+    left: 40%;
+}
+.sec6 .p2 p:nth-of-type(1){
+	text-indent: .5rem;
+}
+.sec6.active p{
+	animation: pMove 1s linear;
+}
+@keyframes icoMove{
+	0%{
+		transform: translateY(100px) translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px) translateX(0px);
+		opacity: 1;
+	}
+}
+.ico_fans {
+    position: absolute;
+    left: 50%;
+    margin-left: -17px;
+    top: 23%;
+    z-index: 2;
+}
+.sec6.active .ico_fans{
+	animation: icoMove .8s linear;
+}
+@keyframes scaleS{
+	0%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+.ico_fans em{
+	position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+    opacity: .5;
+    animation: scaleS 2s linear infinite;
+}
+.ico_fans span{
+	position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    font: bold 2.4rem/5rem "helvetica";
+    text-indent: -.5rem;
+}
+@keyframes icoSec6M{
+	0%{
+		transform: translateY(150px) translateX(10px);
+	}
+	50%{
+		transform: translateY(20px) translateX(30px) rotateZ(-30deg);
+	}
+	100%{
+		transform: translateY(0px) translateX(0px);
+	}
+}
+.sec6 .ico_sec6{
+	position: absolute;
+    left: 19%;
+    top: 25%;
+    width: 1rem;
+    height: 1rem;
+    background: url(img/icon03.png) no-repeat -1.2rem -18.2rem;
+    background-size: 7rem;    
+}
+.sec6.active .ico_sec6{
+	animation: icoSec6M 1s linear;
+}
+.textTop{
+	position: absolute;
+    top: 12%;
+    left: 15%;
+}
+.sec7.active .textTop{
+	animation: textMove 1.5s ease-out;
+}
+@keyframes textMove{
+	0%{
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.textTop p{
+	text-align: center;
+}
+.door{
+	position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 60%;
+    height: 75%;
+    background: #FFF;
+    perspective: 2000px;
+}
+.door span{
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 480px;
+    border-left: 210px solid #282E3D;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform-origin: left 0;
+}
+.sec7.active .door span{
+	transform: rotate3d(0,1,0,85deg);
+	transition: .5s;
+}
+.ico_sec7 span{
+	position: absolute;
+	background: url(img/icon02.png) no-repeat;
+	background-size: 20rem;
+	z-index: 1;
+}
+.ico_sec7 .ico1Sec7{
+    left: 19%;
+    bottom: 15%;
+    width: 2rem;
+    height: 1.5rem;
+    background-position: -13.5rem -.8rem;
+}
+.ico_sec7 .ico2Sec7{
+    left: 40%;
+    bottom: 20%;
+    width: 2rem;
+    height: 1.7rem;
+    background-position: -15.3rem -1rem;
+}
+.ico_sec7 .ico3Sec7{
+    left: 66%;
+    bottom: 8%;
+    width: 3rem;
+    height: 2.3rem;
+    background-position: -17.5rem -1.4rem;
+}
+@keyframes icoS7Move{
+	0%{
+		opacity: 0;
+		transform: scale(.5);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1.5);
+	}
+}
+.sec7.active .ico_sec7 span{
+	animation: icoS7Move 1s ease-out;
+	z-index: 2;
+}
+.sec8 h2{
+	font-size: .6rem;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #efefef;
+    width: 100%;
+    text-align: left;
+    line-height: 1.8rem;
+}
+.sec8 .text1{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+}
+.sec8 .time{
+	float: left;
+	width: 25%;
+}
+.sec8 .time p{
+	text-align: center;
+}
+.sec8 .time strong{
+	font-size: 1.5rem;
+}
+.sec8 .addr{
+	float: left;
+	width: 70%;
+	padding: 5px 0 0 15px;
+}
+.sec8 .addr p:nth-of-type(2){
+	font-size: .8rem;
+	font-weight: bold;
+}
+.sec8 .lookforward{
+	padding-left: 15px;
+}
+.sec8 .lookforward p:nth-of-type(1){
+	font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+#allmap{
+	width:100%;
+	height: 200px;
+	margin-top: 50px;
+}
+.moveEl{
+	transition: .5s;
+}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kU5cs4K5yRaKserbXZDrtnLtxWtjjqxM"></script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="svgs">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="50%" y1="90%" x2="30%" y2="100%" stroke="#fff"></line>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="30%" y1="0" x2="8%" y2="10%" stroke="#fff"></line>
+				<line x1="8%" y1="10%" x2="88%" y2="100%" stroke="#fff"></line>
+				<circle cx="8%" cy="10%" r="4" fill="#FFF"></circle>
+                <circle cx="19%" cy="22%" r="5" stroke="#FFF" stroke-width="3" fill="#468E7C"></circle>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="88%" y1="0" x2="90%" y2="3%" stroke="#fff"></line>
+				<line x1="90%" y1="3%" x2="25%" y2="100%" stroke="#fff"></line>
+				<circle cx="90%" cy="3%" r="4" fill="#FFF"></circle>
+                <circle cx="78%" cy="21%" r="5" stroke="#FFF" stroke-width="3" fill="#F79536"></circle>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="25%" y1="0" x2="10%" y2="20%" stroke="#fff"></line>
+				<line x1="10%" y1="20%" x2="70%" y2="100%" stroke="#fff"></line>
+				<circle cx="10%" cy="20%" r="5" stroke="#FFF" stroke-width="3" fill="#5FA3FF"></circle>
+                <circle cx="55%" cy="80%" r="4" fill="#FFF"></circle>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="70%" y1="0" x2="85%" y2="25%" stroke="#fff"></line>
+				<line x1="85%" y1="25%" x2="5%" y2="85%" stroke="#fff"></line>
+				<line x1="5%" y1="85%" x2="15%" y2="100%" stroke="#fff"></line>
+                <circle cx="85%" cy="25%" r="5" stroke="#FFF" stroke-width="3" fill="#05BD64"></circle>
+                <circle cx="5%" cy="85%" r="4" fill="#FFF"></circle>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="15%" y1="0" x2="86%" y2="100%" stroke="#fff"></line>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="86%" y1="0" x2="91%" y2="7%" stroke="#fff"></line>
+				<line x1="91%" y1="7%" x2="17%" y2="100%" stroke="#fff"></line>
+				<circle cx="91%" cy="7%" r="4" fill="#FFF"></circle>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<line x1="17%" y1="0" x2="8%" y2="11%" stroke="#fff"></line>
+				<circle cx="8%" cy="11%" r="4" fill="#FFF"></circle>
+			</svg>
+		</div>
+		<div class="section sec0">
+			<div>
+				<span class="ico1Sec0"></span>
+				<span class="ico2Sec0 moveEl"></span>
+				<span class="ico3Sec0 moveEl"></span>
+				<span class="ico4Sec0 moveEl"></span>
+				<span class="ico5Sec0 moveEl"></span>
+				<span class="ico6Sec0 moveEl"></span>
+				<span class="ico7Sec0 moveEl"></span>
+			</div>
+		</div>
+		<div class="section sec1">
+			<div class="p">
+				<h2>我是读者</h2>
+				<p>每天有1500万人在腾讯文学的平台上</p>
+				<p>等候“大神”的更新</p>
+			</div>
+			<div class="data">15,000,000</div>
+			<div class="box">
+				<div class="box_cir"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="letterFix">
+				<span class="letter moveEl">末</span>
+				<span class="letter moveEl">生</span>
+				<span class="letter moveEl">梦</span>
+				<span class="letter moveEl">境</span>
+				<span class="letter moveEl">边</span>
+				<span class="letter moveEl">缘</span>
+			</div>
+		</div>
+		<div class="section sec2">
+			<div class="p">
+				<h2>我是漫迷</h2>
+				<p>超过6000万火影粉在</p>
+				<p>腾讯动漫平台守护最初的热血</p>
+			</div>
+			<div class="data">60,000,000</div>
+			<div class="box">
+				<div class="box_cir1"></div>
+				<div class="box_cir2"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="comic_role"></div>
+			<div class="letterFix">
+				<span class="letter moveEl">N</span>
+				<span class="letter moveEl">A</span>
+				<span class="letter moveEl">R</span>
+				<span class="letter moveEl">U</span>
+				<span class="letter moveEl">T</span>
+				<span class="letter moveEl">O</span>
+				<span class="letter moveEl">ナ</span>
+				<span class="letter moveEl">ル</span>
+				<span class="letter moveEl">ト</span>
+			</div>
+		</div>
+		<div class="section sec3">
+			<div class="p">
+				<h2>我是影迷</h2>
+				<p>到现在累计有500万的</p>
+				<p>小洛克走进影院享受欢笑</p>
+			</div>
+			<div class="data">5,000,000</div>
+			<div class="box">
+				<div class="box_cir"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="comic_role"></div>
+			<div class="letterFix">
+				<span class="letter moveEl">奇</span>
+				<span class="letter moveEl">异</span>
+				<span class="letter moveEl">博</span>
+				<span class="letter moveEl">士</span>
+				<span class="letter moveEl">长</span>
+				<span class="letter moveEl">城</span>
+			</div>
+		</div>
+		<div class="section sec4">
+			<div class="p">
+				<h2>我是玩家</h2>
+				<p>这一秒全球有超过500万人</p>
+				<p>与我同时征战《英雄联盟》</p>
+			</div>
+			<div class="data">5,000,000</div>
+			<div class="box">
+				<div class="box_cir1"></div>
+				<div class="box_cir2"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="comic_role"></div>
+			<div class="letterFix">
+				<span class="letter moveEl">最</span>
+				<span class="letter moveEl">终</span>
+				<span class="letter moveEl">幻</span>
+				<span class="letter moveEl">想</span>
+				<span class="letter moveEl">英</span>
+				<span class="letter moveEl">雄</span>
+				<span class="letter moveEl">联</span>
+				<span class="letter moveEl">盟</span>
+			</div>
+		</div>
+		<div class="section sec5">
+			<div class="imgBorder">
+				<img src="img/bg_link.png"/>
+			</div>
+			<div class="pFix">
+				<p>无论是</p>
+				<p>文学、动漫，</p>
+				<p>还是影视和游戏</p>
+				<p>TA们联结了你我</p>
+				<p>也贯穿了虚拟与现实</p>
+			</div>
+			<div class="box box1 moveEl">
+				<div class="box_cir"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="box box2 moveEl">
+				<div class="box_cir1"></div>
+				<div class="box_cir2"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="box box3 moveEl">
+				<div class="box_cir"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="box box4 moveEl">
+				<div class="box_cir1"></div>
+				<div class="box_cir2"></div>
+				<div class="box_pic"></div>
+			</div>
+			<div class="box box5 moveEl">
+				<em></em>
+				<span>MORE</span>
+			</div>
+		</div>
+		<div class="section sec6">
+			<div class="p1">
+				<p>当你喜爱的小说变成了</p>
+				<p>漫画、电影和游戏</p>
+			</div>
+			<div class="p2">
+				<p>我们到底是读者，是漫迷，</p>
+				<p>是影迷，还是玩家？</p>
+			</div>
+			<div class="ico_fans">
+				<em></em>
+				<span>FANS</span>
+			</div>
+			<span class="ico_sec6"></span>
+		</div>
+		<div class="section sec7">
+			<div class="textTop">
+				<p>无论如何</p>
+				<p>一个崭新的互动娱乐新世界正在开启</p>
+			</div>
+			<div class="door">
+				<span></span>
+			</div>
+			<div class="ico_sec7">
+				<span class="ico1Sec7 moveEl"></span>
+				<span class="ico2Sec7 moveEl"></span>
+				<span class="ico3Sec7 moveEl"></span>
+			</div>
+		</div>
+		<div class="section sec8">
+			<h2>会议安排</h2>
+			<div class="text1">
+				<span class="time">
+					<p>April</p>
+					<strong>16日</strong>
+				</span>
+				<span class="addr">
+					<p>2014年4月16日上午10点</p>
+					<p>国家会议中心</p>
+					<p>北京奥林匹克公园天辰东路7号</p>
+				</span>
+			</div>
+			<div id="allmap"></div>
+			<div class="lookforward">
+				<p>敬请期待</p>
+				<p>UP2014 腾讯互动娱乐年度发布会</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.fullPage.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		var W = $(document).width() - 50;
+		var H = $(window).height() - 50;
+		var $letter = $('.section').find('.letter');
+		var $moveEl = $('.section').find('.moveEl');
+		for (var i = 0; i < $letter.length; i++) {
+		    $letter.eq(i).css({
+				top: Math.random()*H,
+				left: Math.random()*W,
+				transform: 'rotateZ('+Math.random()*360+'deg)  translateY(0px)'
+			})
+		}
+		window.addEventListener('devicemotion',function(e) {
+			var motion = e.accelerationIncludingGravity;
+			var x = Math.round(motion.x);
+			var y = Math.round(motion.y);
+			if (x > -10 || x < 10) {
+			    for (var i = 0; i < $moveEl.length; i++) {
+				    $moveEl.eq(i).css({
+				    	marginLeft:x*5
+					})
+				}
+			}
+			if (y > -10 || y < 10) {
+			    for (var i = 0; i < $moveEl.length; i++) {
+				    $moveEl.eq(i).css({
+				    	transform: 'translateY('+y*5+'px)'
+					})
+				}
+			}
+		})
+		$('#fullpage').fullpage({
+			sectionsColor: ['#eaebef','#468E7C', '#F79536', '#5FA3FF', '#05BD64','#2E3A5E','#E42E2D','#282E3D','#0D0D0D'],
+			afterLoad: function (anchorLink, index) {
+				$('.section').eq(index - 1).addClass('active');
+				//document.title=$('.section').eq(index - 1)[0].className+'|||'+(index-1);
+				(function(){
+					var $letter = $('.active').find('.letter');
+					//console.log($letter)
+					for (var i = 0; i < $letter.length; i++) {
+					    $letter.eq(i).css({
+							top: Math.random()*H,
+							left: Math.random()*W,
+							transform: 'rotateZ('+Math.random()*360+'deg)'
+						})
+					}
+				})()
+			}
+		})
+		var map = new BMap.Map("allmap");          
+		map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+		var local = new BMap.LocalSearch(map, {
+			renderOptions:{map: map}
+		});
+		local.search("国家会议中心");
+		map.enableScrollWheelZoom(true);
+		// 覆盖区域图层测试
+		map.addTileLayer(new BMap.PanoramaCoverageLayer());
+	
+		/*var stCtrl = new BMap.PanoramaControl(); //构造全景控件
+		stCtrl.setOffset(new BMap.Size(20, 20));
+		map.addControl(stCtrl);//添加全景控件*/
+		
+		map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	})
+</script>
+</html>

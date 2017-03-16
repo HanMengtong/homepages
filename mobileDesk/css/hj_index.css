@@ -1,0 +1,198 @@
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+#hj_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+}
+p {
+  margin: 0;
+}
+#hj_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 15rem;
+  height: 2rem;
+  background-color: #02b9ae;
+}
+#hj_header div {
+  width: 12rem;
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#hj_left {
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#hj_header a {
+  float: left;
+  width: 3rem;
+  height: 1.2rem;
+  margin: 0.4rem 0 0 0.8rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font: 0.6rem/1.2rem "微软雅黑";
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#hj_header .active {
+  color: #fefefe;
+}
+#hj_section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -0.6rem;
+  left: 0;
+}
+#hj_section input {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 14.5rem;
+  height: 1.2rem;
+  margin: 0.4rem 0.25rem 0;
+  padding-left: 1rem;
+  border: 2px solid #dadada;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.1rem;
+  outline: none;
+  font: 0.5rem/1.2rem "微软雅黑";
+  color: #999999;
+}
+#hj_left .card {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 15rem;
+  height: 3.6rem;
+  margin-top: 0.278rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+#hj_left .card img {
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 1.2rem 0 0 -0.7rem;
+  background-color: grey;
+  border-radius: 50%;
+  display: none;
+}
+#hj_left .card p {
+  float: left;
+  margin-left: 0.6rem;
+  font: 0.8rem/3.6rem "微软雅黑";
+  height: 3rem;
+}
+#hj_left .selects {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+}
+#hj_left .name {
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+#hj_left .selects,
+#hj_left .name .fNameN {
+  margin-top: 0.4rem;
+  border-top: 1px solid #hj_dadada;
+  border-bottom: 1px solid #hj_dadada;
+  background-color: #fff;
+}
+#hj_left .selects li,
+#hj_left .name .fNameN li {
+  float: none;
+  width: 15rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  padding: 0 1rem 0 1rem;
+  box-sizing: border-box;
+  font: 0.6rem/1.6rem "微软雅黑";
+  color: #020202;
+  border: none;
+}
+#hj_left .selects li span,
+#hj_left .name .fNameN span {
+  float: left;
+}
+#hj_left .selects li a {
+  float: right;
+  width: 2rem;
+  height: 1rem;
+  color: #b2b2b2;
+  text-align: right;
+}
+#hj_left .name li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  color: #020202;
+  text-align: left;
+  border-top: 1px solid #aaa;
+}
+#hj_right {
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  width: 15rem;
+  height: 100%;
+  background: #fff;
+}
+#hj_addBtn {
+  position: fixed;
+  bottom: 0.6944rem;
+  right: 0.6944rem;
+  width: 1.861rem;
+  height: 1.861rem;
+  background: #02b9ae;
+  color: #fff;
+  text-align: center;
+  font: 1.04rem/1.861rem "微软雅黑";
+  border-radius: 50%;
+}
+#hj_add {
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  z-index: -1;
+  width: 15rem;
+  height: 100%;
+  background: #fff;
+}
